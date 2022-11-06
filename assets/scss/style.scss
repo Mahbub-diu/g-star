@@ -775,6 +775,20 @@ footer {
 
       }
 
+      .add-to-wish-icon {
+        position: absolute;
+        top: 3%;
+        right: 4%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        i {
+          font-size: 25px;
+        }
+      }
+
       .card-body {
         padding: 0px;
         background-color: $white;

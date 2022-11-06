@@ -742,6 +742,17 @@ footer .footer-content .copyright {
   border: none !important;
   position: relative;
 }
+.all-products .all-product-card-wrapper .product-card .add-to-wish-icon {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+}
+.all-products .all-product-card-wrapper .product-card .add-to-wish-icon:hover {
+  cursor: pointer;
+}
+.all-products .all-product-card-wrapper .product-card .add-to-wish-icon i {
+  font-size: 25px;
+}
 .all-products .all-product-card-wrapper .product-card .card-body {
   padding: 0px;
   background-color: #FFFFFF;
