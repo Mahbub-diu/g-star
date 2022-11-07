@@ -72,7 +72,7 @@ header {
 .fall-saving {
   margin: 0;
   padding: 10px 0;
-  // font-family: $title-font;
+  font-family: $title-font;
 
   ul.nav {
     li {
@@ -108,7 +108,7 @@ header {
     align-items: center;
 
     h1 {
-      font-family: $gothamultra !important;
+      font-family: $title-font2;
       text-transform: uppercase;
       color: $white;
       font-size: 80px;

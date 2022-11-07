@@ -148,6 +148,7 @@ header .header-right .header-right-menu a:nth-child(1):hover {
 .fall-saving {
   margin: 0;
   padding: 10px 0;
+  font-family: gothamultra;
 }
 .fall-saving ul.nav li {
   margin: 0 10px;
@@ -177,6 +178,7 @@ header .header-right .header-right-menu a:nth-child(1):hover {
   align-items: center;
 }
 .banner .banner-text h1 {
+  font-family: gothamblack;
   text-transform: uppercase;
   color: #FFFFFF;
   font-size: 80px;
