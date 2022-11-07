@@ -4,6 +4,13 @@
 @import "partials/color";
 @import "partials/common";
 
+.modal-open {
+  .modal-backdrop{
+    display: none !important;
+  }
+
+}
+
 header {
   background: $primary-color;
   padding-top: 10px;
@@ -65,10 +72,12 @@ header {
 .fall-saving {
   margin: 0;
   padding: 10px 0;
+  // font-family: $title-font;
 
   ul.nav {
     li {
       margin: 0 10px;
+
       &:nth-child(1) {
         a {
           color: $orange;
@@ -295,12 +304,18 @@ header {
   }
   .you-may-like-slider-wrapper {
     overflow: hidden;
+
+
     .you-may-like-slider {
       position: relative;
+      padding: 0 5px !important;
+
       a {
         color: $primary-color;
+
         img {
         }
+
         p.card-title {
           background-color: $light-gray2;
           text-align: center;
@@ -486,6 +501,10 @@ header {
 }
 
 .subscription {
+  background-color: $light-gray2;
+  padding: 100px 0;
+  margin-bottom: 0;
+
   .subscription-title {
     h2 {
       font-size: 30px;
@@ -503,14 +522,15 @@ header {
     .preference {
       display: flex;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
 
       span {
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 13px;
         font-weight: 700;
         color: $primary-color;
       }
+
 
       label {
         font-size: 13px;
@@ -521,7 +541,7 @@ header {
         width: 1.5em;
         height: 1.5em;
         margin-top: 0;
-        margin-right: 5px;
+        margin-right: 10px;
         border: 2px solid $radio-btn;
       }
     }
@@ -537,7 +557,7 @@ header {
           color: $primary-color;
         }
         input {
-          width: 300px;
+          width: 400px;
           height: 40px;
           border: 2px solid $primary-color;
           padding-left: 10px;
@@ -566,6 +586,7 @@ header {
   text-align: center;
   background-color: $white;
   padding: 50px 0;
+  margin-top: 0;
   margin-bottom: 0;
 
   .app-title {
@@ -607,6 +628,7 @@ header {
 
 footer {
   padding: 50px 0;
+  background-color: $light-gray2;
 
   .footer-content {
     max-width: 984px;
@@ -638,12 +660,16 @@ footer {
       // text-align: center;
       a {
         border: 2px solid $light-gray3;
-        padding: 8px 100px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 14px;
         text-align: center;
         color: $primary-color;
         font-weight: 700;
-        display: block;
+        // display: block;
         margin-top: 15px;
         i {
           margin-right: 5px;
@@ -710,42 +736,70 @@ footer {
 // ====================== MEN'S CATEGORY PAGE ===================
 .all-products {
   margin-top: 0;
-  background-color: $light-gray2;
+  background-color: $white;
 
 
-  .navbar {
-    padding: 20px;
-    border-bottom: 1px solid $light-gray3;
+  nav {
+    background-color: $light-gray2;
+    border-bottom: 2px solid $radio-btn;
+    padding: 0 20px;
+    
+    .nav-left {
 
-    ul.navbar-nav {
-      li {
-        .btn-group {
-          button {
+      .nav-item{
+
+        .dropdown {
+  
+          button{
+            background-color: transparent;
             border: none;
-            background-color: $white;
+            color: $primary-color;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 15px 15px;
           }
-        }
-
-        .dropdown-menu {
-          padding: 10px;
-          
-          li{
-            form {
-              .row {
-                min-width: 300px;
-
-                .color {
-                  display: flex;
-                  .color-box {
-                    width: 20px;
-                    height: 20px;
-                    border: 1px solid $black;
-                    margin-right: 10px;
+  
+          .dropdown-toggle {
+            border-radius: 0;
+          }
+  
+          .dropdown-toggle.show{
+            background-color: $white;
+            border-radius: 0;
+          }
+  
+          .dropdown-menu {
+            border-radius: 0px;
+            border: none;
+            transform: translate(0px, 42px) !important;
+            width: max-content;
+  
+            .dropdown-item{
+              &:hover {
+                background-color: transparent;
+              }
+  
+              .form-check {
+  
+                .form-check-input {
+                  border-radius: 0;
+                  width: 20px;
+                  height: 20px;
+                  // margin-right: 30px;
+                  border-color: $black;
+  
+                  &:checked {
+                    background-color: $black;
+                    border-color: $black;
+  
                   }
-
-                  .color-name {
-                    color: $primary-color;
-                    font-size: 13px;
+  
+                  &:checked[type=checkbox] {
+                    background-image: none;
+                  }
+  
+                  &:focus {
+                    box-shadow: none;
                   }
                 }
               }
@@ -754,7 +808,168 @@ footer {
         }
       }
     }
+
+    .nav-right {
+      font-size: 13px;
+
+      .menu-title {
+        font-size: 13px;
+        color: $light-gray;
+      }
+
+
+      
+      li.nav-item {
+        
+        a.nav-link {
+          font-weight: 700;
+          color: $primary-color;
+          // padding-left: 5px;
+          // padding-right: 5px;
+        }
+
+
+
+        .form-select{
+          background-color: transparent;
+          border-radius: 0;
+          border: none;
+          font-size: 13px;
+          &:focus {
+            box-shadow: none;
+          }
+          
+        }
+      }
+
+      li.view-as {
+        border-bottom: 2px solid transparent;
+        // margin: 0 5px;
+
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+
+        &:active {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+    
   }
+
+  .short-filter-modal-wrapper{
+
+    .short-filter-btn {
+      width: 100%;
+      background-color: $short-btn;
+      border-color: $short-btn;
+      color: $white;
+      font-weight: 700;
+      padding: 5px 0;
+  
+      &:hover{
+        background-color: $white;
+        color: $short-btn;
+      }
+    }
+
+    .modal-dialog{
+      .modal-content{
+        border-radius: 0;
+        .modal-header{
+          .modal-title {
+            font-weight: 700;
+            color: $short-btn;
+          }
+        }
+        .modal-body{
+          height: 50vh;
+          .dropdown {
+            button {
+              border: 1px solid $primary-color;
+              border-radius: 0;
+              background-color: $short-btn;
+              color: $white;
+              width: 100%;
+            }
+
+            .dropdown-menu {
+              border-radius: 0px;
+              border: none;
+              transform: translate(0px, 42px) !important;
+              width: max-content;
+              border: 1px solid $short-btn;
+            }
+          }
+
+        }
+        .modal-footer{
+          .close, .apply {
+            background-color: $short-btn;
+            color: $white;
+            border-radius: 0;
+            border: 1px solid $short-btn;
+            font-weight: 600;
+            &:hover{
+              background-color: $white;
+              color: $short-btn;
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+
+  .view-as-wrapper {
+    background-color: $white;
+    box-shadow: 0px 6px 8px -10px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 0px 6px 8px -10px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 6px 8px -10px rgba(0,0,0,0.62);
+    padding: 0 20px;
+
+    ul.view-as{
+      li{
+        font-size: 14px;
+        color: $light-gray;
+        a{
+          color: $primary-color;
+          font-size: 16px;
+          font-weight: 700;
+          border-bottom: 2px solid transparent;
+          &:hover {
+            border-bottom: 2px solid $primary-color;
+          }
+          &:focus{
+            border-bottom: 2px solid $primary-color;
+          }
+        }
+      }
+    }
+
+    ul.short-by{
+      li{
+        font-size: 14px;
+        color: $light-gray;
+        
+        select{
+          margin-left: 10px;
+          border-radius: 0;
+          &:focus {
+            box-shadow: none;
+            border: 1px solid $primary-color;
+          }
+          option{
+
+          }
+        }
+      }
+    }
+  }
+
+
 
   .total-item {
     padding: 40px 20px;
@@ -866,6 +1081,27 @@ footer {
             opacity: 1;
           }
         }
+      }
+    }
+  }
+
+  .product-seen-number {
+    padding: 50px 0;
+    p{
+      font-size: 13px;
+      color: $light-gray;
+    }
+
+    button {
+      background-color: $white;
+      border: 1px solid $light-gray;
+      padding: 10px 80px;
+      font-size: 13px;
+      font-weight: 700;
+      color: $light-gray;
+
+      &:hover {
+        color: $primary-color;
       }
     }
   }
