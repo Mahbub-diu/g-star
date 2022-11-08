@@ -76,10 +76,13 @@
   .banner .banner-text h1 {
     font-size: 60px !important;
   }
-  .subscription .subscription-title h2 {
+  .all-product-card-wrapper .product-card:hover .product-info {
+    bottom: 20%;
+  }
+  .all-product-card-wrapper .subscription .subscription-title h2 {
     font-size: 25px;
   }
-  .subscription .subscription-title p {
+  .all-product-card-wrapper .subscription .subscription-title p {
     font-size: 13px;
   }
 }

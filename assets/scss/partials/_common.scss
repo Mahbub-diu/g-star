@@ -95,3 +95,49 @@ section {
     background-color: transparent;
   }
 }
+
+.feature-material-title {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 30px;
+  color: $primary-color;
+}
+
+.feature-material-link {
+  font-family: $title-font3;
+  font-weight: 700;
+  font-size: 14px;
+  color: $primary-color;
+
+  &:hover{
+    color: $light-gray;
+  }
+}
+
+.feature-material-subtitle {
+  font-family: $title-font3;
+  font-weight: 700;
+  font-size: 14px;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.feature-material-text {
+  font-family: $body-font;
+  font-weight: 400;
+  font-size: 13px;
+  color: $light-gray;
+  line-height: 20px;
+}
+
+.feature-material-list {
+  ul{
+    list-style: disc;
+    padding-left: 20px;
+    li{
+      color: $light-gray;
+      font-family: $body-font;
+      font-size: 13px;
+    }
+  }
+}
