@@ -76,9 +76,10 @@ section {
 }
 
 .section-title {
-  h2{
+  padding-left: 40px;
+  h2 {
     font-family: $title-font;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 900;
     text-transform: uppercase;
     color: $primary-color;
@@ -86,12 +87,11 @@ section {
   }
 }
 
-
-.shop-btn{
+.shop-btn {
   border: 2px solid transparent;
   padding: 8px 20px;
   font-weight: 600;
-  &:hover{
+  &:hover {
     background-color: transparent;
   }
 }
@@ -109,7 +109,7 @@ section {
   font-size: 14px;
   color: $primary-color;
 
-  &:hover{
+  &:hover {
     color: $light-gray;
   }
 }
@@ -131,13 +131,25 @@ section {
 }
 
 .feature-material-list {
-  ul{
+  ul {
     list-style: disc;
     padding-left: 20px;
-    li{
+    li {
       color: $light-gray;
       font-family: $body-font;
       font-size: 13px;
     }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .feature-material-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .feature-material-title {
+    font-size: 25px;
   }
 }

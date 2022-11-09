@@ -1,3 +1,149 @@
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFFFFF;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  transition: all ease 0.4s;
+}
+button {
+  transition: all ease 0.4s;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1800px !important;
+}
+
+section {
+  margin: 120px 0;
+}
+
+.section-title {
+  padding-left: 40px;
+}
+.section-title h2 {
+  font-family: gothamultra;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #303030;
+  padding: 24px 0;
+}
+
+.shop-btn {
+  border: 2px solid transparent;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+.shop-btn:hover {
+  background-color: transparent;
+}
+
+.feature-material-title {
+  font-family: gothamultra;
+  font-weight: 700;
+  font-size: 30px;
+  color: #303030;
+}
+
+.feature-material-link {
+  font-family: gothambold;
+  font-weight: 700;
+  font-size: 14px;
+  color: #303030;
+}
+.feature-material-link:hover {
+  color: #999999;
+}
+
+.feature-material-subtitle {
+  font-family: gothambold;
+  font-weight: 700;
+  font-size: 14px;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+.feature-material-text {
+  font-family: gothambook;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+  line-height: 20px;
+}
+
+.feature-material-list ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.feature-material-list ul li {
+  color: #999999;
+  font-family: gothambook;
+  font-size: 13px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .feature-material-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .feature-material-title {
+    font-size: 25px;
+  }
+}
 @media (max-width: 991px) {
   h1 {
     font-size: 40px;
@@ -47,6 +193,11 @@
     height: 40px;
     margin-top: 15px;
   }
+  .product-carousel .carousel-indicators button.indicator-btn {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -67,6 +218,11 @@
     height: 40px;
     margin-top: 15px;
   }
+  .product-carousel .carousel-indicators button.indicator-btn {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -85,6 +241,11 @@
   .all-product-card-wrapper .subscription .subscription-title p {
     font-size: 13px;
   }
+  .product-carousel .carousel-indicators button.indicator-btn {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -100,6 +261,11 @@
   .subscription .subscription-title p {
     font-size: 13px;
   }
+  .product-carousel .carousel-indicators button.indicator-btn {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 10px;
+  }
 }
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
@@ -109,5 +275,208 @@
   .banner .banner-text h1 {
     font-size: 80px !important;
   }
+  .product-carousel .carousel-indicators button.indicator-btn {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
 }
-/* XX-Large devices (larger desktops, 1400px and up) *//*# sourceMappingURL=responsive.css.map */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .product-carousel .carousel-product-info {
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    max-width: 350px;
+    z-index: 100;
+  }
+  .product-carousel .carousel-product-info .product-title {
+    font-family: gothamultra;
+    font-size: 30px;
+    font-weight: 700;
+    color: #303030;
+  }
+  .product-carousel .carousel-product-info .price {
+    font-family: gothambold;
+    font-size: 13px;
+    color: #303030;
+  }
+  .product-carousel .carousel-product-info .color p {
+    font-family: gothambold;
+    font-size: 13px;
+    color: #303030;
+  }
+  .product-carousel .carousel-product-info .color span {
+    font-family: gothambold;
+    font-size: 13px;
+    color: #999999;
+  }
+  .product-carousel .carousel-product-info .color span a {
+    color: #303030;
+    font-weight: 300;
+    font-family: gothambook;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li {
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #999999;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li .check {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li img {
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li:hover {
+    border: 2px solid #303030;
+    cursor: pointer;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li:hover .check {
+    opacity: 1;
+  }
+  .product-carousel .carousel-product-info .color-variation ul li:hover img {
+    transform: scale(1.1);
+  }
+  .product-carousel .carousel-product-info .size-guide p {
+    font-family: gothambook;
+    font-size: 13px;
+    color: #303030;
+    margin-bottom: 0;
+  }
+  .product-carousel .carousel-product-info .size-guide button.see-guide-btn {
+    font-family: gothambold;
+    font-size: 13px;
+    color: #303030;
+    background-color: transparent;
+    border: none;
+  }
+  .product-carousel .carousel-product-info .size-guide button.see-guide-btn:hover {
+    cursor: pointer;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper p {
+    font-family: gothambold;
+    font-size: 13px;
+    color: #303030;
+    margin: 0;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .size-list ul {
+    display: flex;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .size-list ul li {
+    margin: 0 5px;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00385f;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #00385f;
+    transition: 0.5s;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button:hover {
+    cursor: pointer;
+    background-color: #00385f;
+    color: #FFFFFF;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button:focus {
+    background-color: #00385f !important;
+    color: #FFFFFF !important;
+  }
+  .product-carousel .carousel-product-info .size-list-wrapper .find-right-size button {
+    font-family: gothambook;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    color: #303030;
+    text-decoration: underline;
+  }
+  .product-carousel .carousel-product-info .availability p {
+    color: #12a100;
+    font-size: 13px;
+    font-family: gothambold;
+    margin: 0;
+  }
+  .product-carousel .carousel-product-info .availability p i {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+  .product-carousel .carousel-product-info .add-to-bag-wrapper {
+    margin-bottom: 30px;
+  }
+  .product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag {
+    background-color: #00385f;
+    width: 70%;
+    color: #FFFFFF;
+    padding: 5px 0;
+    border: 2px solid #00385f;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag i {
+    margin-right: 5px;
+  }
+  .product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag:hover {
+    background-color: transparent;
+    color: #00385f;
+    border-color: #00385f;
+  }
+  .product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-wish {
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    margin-left: 10px;
+    color: #303030;
+  }
+  .product-carousel .carousel-product-info .product-info-footer button.find-local-store {
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #00385f;
+  }
+  .product-carousel .carousel-product-info .product-info-footer button.find-local-store i {
+    color: #303030;
+    margin-right: 5px;
+  }
+  .product-carousel .carousel-product-info .product-info-footer .usps {
+    font-size: 13px;
+    font-weight: 700;
+    color: #303030;
+  }
+  .product-carousel .carousel-product-info .product-info-footer .usps i {
+    color: #303030;
+    margin-right: 8px;
+  }
+  .product-carousel .carousel-product-info .product-info-footer .usps-charge {
+    font-size: 13px;
+    font-weight: 700;
+    color: #12a100;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=responsive.css.map */

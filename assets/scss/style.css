@@ -70,9 +70,12 @@ section {
   margin: 120px 0;
 }
 
+.section-title {
+  padding-left: 40px;
+}
 .section-title h2 {
   font-family: gothamultra;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
   color: #303030;
@@ -131,6 +134,16 @@ section {
   font-size: 13px;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .feature-material-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .feature-material-title {
+    font-size: 25px;
+  }
+}
 header {
   background: #303030;
   padding-top: 10px;
@@ -381,9 +394,6 @@ header .header-right .header-right-menu a:nth-child(1):hover {
   color: #FFFFFF;
 }
 
-.you-may-like .section-title {
-  padding-left: 40px;
-}
 .you-may-like .you-may-like-slider-wrapper {
   overflow: hidden;
 }
@@ -1136,42 +1146,42 @@ footer .footer-content .copyright {
   display: block;
   margin-bottom: 20px;
 }
-.product-carousel .product-info {
+.product-carousel .carousel-product-info {
   position: absolute;
   right: 10%;
   top: 6%;
   max-width: 350px;
   z-index: 100;
 }
-.product-carousel .product-info .product-title {
+.product-carousel .carousel-product-info .product-title {
   font-family: gothamultra;
   font-size: 30px;
   font-weight: 700;
   color: #303030;
 }
-.product-carousel .product-info .price {
+.product-carousel .carousel-product-info .price {
   font-family: gothambold;
   font-size: 13px;
   color: #303030;
 }
-.product-carousel .product-info .color p {
+.product-carousel .carousel-product-info .color p {
   font-family: gothambold;
   font-size: 13px;
   color: #303030;
 }
-.product-carousel .product-info .color span {
+.product-carousel .carousel-product-info .color span {
   font-family: gothambold;
   font-size: 13px;
   color: #999999;
 }
-.product-carousel .product-info .color span a {
+.product-carousel .carousel-product-info .color span a {
   color: #303030;
   font-weight: 300;
   font-family: gothambook;
   text-decoration: underline;
   margin-left: 10px;
 }
-.product-carousel .product-info .color-variation ul li {
+.product-carousel .carousel-product-info .color-variation ul li {
   width: 70px;
   height: 70px;
   margin: 0 5px;
@@ -1180,7 +1190,7 @@ footer .footer-content .copyright {
   position: relative;
   overflow: hidden;
 }
-.product-carousel .product-info .color-variation ul li .check {
+.product-carousel .carousel-product-info .color-variation ul li .check {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1195,71 +1205,73 @@ footer .footer-content .copyright {
   transition: 0.5s;
   font-size: 20px;
 }
-.product-carousel .product-info .color-variation ul li img {
+.product-carousel .carousel-product-info .color-variation ul li img {
   border-radius: 50%;
   transition: 0.3s;
 }
-.product-carousel .product-info .color-variation ul li:hover {
+.product-carousel .carousel-product-info .color-variation ul li:hover {
   border: 2px solid #303030;
   cursor: pointer;
 }
-.product-carousel .product-info .color-variation ul li:hover .check {
+.product-carousel .carousel-product-info .color-variation ul li:hover .check {
   opacity: 1;
 }
-.product-carousel .product-info .color-variation ul li:hover img {
+.product-carousel .carousel-product-info .color-variation ul li:hover img {
   transform: scale(1.1);
 }
-.product-carousel .product-info .size-guide p {
+.product-carousel .carousel-product-info .size-guide p {
   font-family: gothambook;
   font-size: 13px;
   color: #303030;
   margin-bottom: 0;
 }
-.product-carousel .product-info .size-guide button.see-guide-btn {
+.product-carousel .carousel-product-info .size-guide button.see-guide-btn {
   font-family: gothambold;
   font-size: 13px;
   color: #303030;
   background-color: transparent;
   border: none;
 }
-.product-carousel .product-info .size-guide button.see-guide-btn:hover {
+.product-carousel .carousel-product-info .size-guide button.see-guide-btn:hover {
   cursor: pointer;
 }
-.product-carousel .product-info .size-list-wrapper p {
+.product-carousel .carousel-product-info .size-list-wrapper p {
   font-family: gothambold;
   font-size: 13px;
   color: #303030;
   margin: 0;
 }
-.product-carousel .product-info .size-list-wrapper .size-list .form-check {
-  position: relative;
-  margin: 0;
+.product-carousel .carousel-product-info .size-list-wrapper .size-list ul {
+  display: flex;
 }
-.product-carousel .product-info .size-list-wrapper .size-list .form-check .form-check-label {
-  position: absolute;
-  left: 0%;
-  color: #999999;
-  font-weight: 700;
-  text-align: center;
+.product-carousel .carousel-product-info .size-list-wrapper .size-list ul li {
+  margin: 0 5px;
 }
-.product-carousel .product-info .size-list-wrapper .size-list .form-check .form-check-input {
+.product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button {
+  background-color: transparent;
+  border: none;
   width: 40px;
   height: 40px;
-  border-radius: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00385f;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #00385f;
+  transition: 0.5s;
 }
-.product-carousel .product-info .size-list-wrapper .size-list .form-check .form-check-input:checked {
+.product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button:hover {
+  cursor: pointer;
   background-color: #00385f;
-  background-image: none;
-  border: none;
-}
-.product-carousel .product-info .size-list-wrapper .size-list .form-check .form-check-input:checked .form-check-label {
   color: #FFFFFF;
 }
-.product-carousel .product-info .size-list-wrapper .size-list .form-check .form-check-input:focus {
-  box-shadow: none;
-  border: none;
+.product-carousel .carousel-product-info .size-list-wrapper .size-list ul li button:focus {
+  background-color: #00385f !important;
+  color: #FFFFFF !important;
 }
-.product-carousel .product-info .size-list-wrapper .find-right-size button {
+.product-carousel .carousel-product-info .size-list-wrapper .find-right-size button {
   font-family: gothambook;
   font-size: 13px;
   background-color: transparent;
@@ -1267,20 +1279,20 @@ footer .footer-content .copyright {
   color: #303030;
   text-decoration: underline;
 }
-.product-carousel .product-info .availability p {
+.product-carousel .carousel-product-info .availability p {
   color: #12a100;
   font-size: 13px;
   font-family: gothambold;
   margin: 0;
 }
-.product-carousel .product-info .availability p i {
+.product-carousel .carousel-product-info .availability p i {
   font-size: 11px;
   margin-right: 5px;
 }
-.product-carousel .product-info .add-to-bag-wrapper {
+.product-carousel .carousel-product-info .add-to-bag-wrapper {
   margin-bottom: 30px;
 }
-.product-carousel .product-info .add-to-bag-wrapper .add-to-bag {
+.product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag {
   background-color: #00385f;
   width: 70%;
   color: #FFFFFF;
@@ -1289,46 +1301,61 @@ footer .footer-content .copyright {
   font-size: 13px;
   font-weight: 700;
 }
-.product-carousel .product-info .add-to-bag-wrapper .add-to-bag i {
+.product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag i {
   margin-right: 5px;
 }
-.product-carousel .product-info .add-to-bag-wrapper .add-to-bag:hover {
+.product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-bag:hover {
   background-color: transparent;
   color: #00385f;
   border-color: #00385f;
 }
-.product-carousel .product-info .add-to-bag-wrapper .add-to-wish {
+.product-carousel .carousel-product-info .add-to-bag-wrapper .add-to-wish {
   background-color: transparent;
   border: none;
   font-size: 26px;
   margin-left: 10px;
   color: #303030;
 }
-.product-carousel .product-info .product-info-footer button.find-local-store {
+.product-carousel .carousel-product-info .product-info-footer button.find-local-store {
   background-color: transparent;
   border: none;
   font-size: 13px;
   font-weight: 700;
   color: #00385f;
 }
-.product-carousel .product-info .product-info-footer button.find-local-store i {
+.product-carousel .carousel-product-info .product-info-footer button.find-local-store i {
   color: #303030;
   margin-right: 5px;
 }
-.product-carousel .product-info .product-info-footer .usps {
+.product-carousel .carousel-product-info .product-info-footer .usps {
   font-size: 13px;
   font-weight: 700;
   color: #303030;
 }
-.product-carousel .product-info .product-info-footer .usps i {
+.product-carousel .carousel-product-info .product-info-footer .usps i {
   color: #303030;
   margin-right: 8px;
 }
-.product-carousel .product-info .product-info-footer .usps-charge {
+.product-carousel .carousel-product-info .product-info-footer .usps-charge {
   font-size: 13px;
   font-weight: 700;
   color: #12a100;
   text-transform: uppercase;
+}
+.product-carousel .select-size-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.product-carousel .select-size-offcanvas {
+  background-color: #DCDCDC;
+}
+.product-carousel .select-size-offcanvas .carousel-product-info {
+  right: 2%;
+}
+.product-carousel .select-size-offcanvas .carousel-product-info .close-btn {
+  position: absolute;
+  right: 3%;
 }
 
 .feature-material {
