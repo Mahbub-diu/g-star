@@ -198,6 +198,30 @@ section {
     height: 35px;
     margin-bottom: 5px;
   }
+  .product-title-text {
+    max-width: 250px !important;
+    position: absolute;
+    top: 8%;
+    right: -10%;
+  }
+  .product-title-text .product-title {
+    font-family: gothamultra;
+    font-size: 20px !important;
+    color: #303030;
+  }
+  .product-title-text button {
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    z-index: 100;
+  }
+  .product-title-text button i {
+    margin-right: 6px;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -223,6 +247,30 @@ section {
     height: 35px;
     margin-bottom: 5px;
   }
+  .product-title-text {
+    max-width: 350px;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+  }
+  .product-title-text .product-title {
+    font-family: gothamultra;
+    font-size: 25px !important;
+    color: #303030;
+  }
+  .product-title-text button {
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    z-index: 100;
+  }
+  .product-title-text button i {
+    margin-right: 6px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -245,6 +293,31 @@ section {
     width: 45px;
     height: 45px;
     margin-bottom: 5px;
+  }
+  .product-title-text {
+    max-width: 350px;
+    top: 5%;
+    right: 5%;
+  }
+  .product-title-text .product-title {
+    font-family: gothamultra;
+    font-size: 30px !important;
+  }
+  .product-title-text .feature-material-text {
+    font-size: 13px;
+  }
+  .product-title-text button {
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    text-decoration: underline;
+    z-index: 100;
+  }
+  .product-title-text button i {
+    margin-right: 6px;
   }
 }
 /* Large devices (desktops, 992px and up) */
