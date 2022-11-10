@@ -6,6 +6,7 @@
     <title>Vigro | Home</title>
     <link rel="stylesheet" href="./assets/scss/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/fonts/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="./assets/scss/fonts.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -24,11 +25,11 @@
     <!-- ============================================== -->
     <!-- =================   HEADER   ================= -->
     <!-- ============================================== -->
-    <header class="header">
-      <div class="container-fluid px-0">
+    <header class="header ">
+      <div class="container px-0 position-relative">
         <div class="row g-0">
           <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <!-- <div class="container-fluid"> -->
               <button
                 class="navbar-toggler"
                 type="button"
@@ -71,7 +72,7 @@
                   </li>
                 </ul>
               </div>
-              <form class="d-flex" role="search">
+              <form class="d-flex position-absolute top-50 end-0 translate-middle-y" role="search">
                 <input
                   class="form-control me-2"
                   type="search"
@@ -82,7 +83,7 @@
                   Search
                 </button>
               </form>
-            </div>
+            <!-- </div> -->
           </nav>
         </div>
       </div>
@@ -92,13 +93,14 @@
     <!-- ============================================== -->
 
     <!-- ============================================== -->
-    <!-- =================   BANNER   ================= -->
+    <!-- =================   VIDEO BANNER   ================= -->
     <!-- ============================================== -->
     <section class="banner-video m-0">
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
           <div class="col-12 p-0">
             <video
+            class="w-100"
               width="100%"
               height="auto"
               src="./assets/images/Comp 1_3_1652251490.mp4"
@@ -110,7 +112,28 @@
       </div>
     </section>
     <!-- ============================================== -->
-    <!-- =================   BANNER   ================= -->
+    <!-- =================   VIDEO BANNER   ================= -->
+    <!-- ============================================== -->
+
+    <!-- ============================================== -->
+    <!-- ============  CATEGORY SECTION   ============ -->
+    <!-- ============================================== -->
+    <section class="category m-0">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="category-card m-0 p-0">
+                <a href="#">
+                  <img src="./assets/images/WSO3b07704.png" alt="" class="w-100">
+                  <h4 >men</h4>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================== -->
+    <!-- ============  CATEGORY SECTION   ============ -->
     <!-- ============================================== -->
 
     <!-- ============================================== -->
