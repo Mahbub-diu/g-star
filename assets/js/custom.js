@@ -74,3 +74,14 @@ $('.you-may-like-slider-wrapper').slick({
       // instead of a settings object
     ]
   });
+
+  window.addEventListener('scroll', function() {
+    if (document.documentElement.scrollTop > 200) {
+      document.getElementById('header').classList.add('fixed-top')
+      document.getElementById('header').style.backgroundColor = '#fff'
+    }
+    if (document.documentElement.scrollTop < 200) {
+      document.getElementById('header').classList.remove('fixed-top')
+      document.getElementById('header').style.backgroundColor = 'transparent'
+    }
+});
