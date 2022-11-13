@@ -79,7 +79,7 @@ $('.you-may-like-slider-wrapper').slick({
     if (document.documentElement.scrollTop > 200) {
       document.getElementById('header').classList.add('fixed-top')
       document.getElementById('header').style.backgroundColor = '#fff'
-      document.querySelectorAll('.nav-link').style.color = '#000'
+      document.querySelectorAll('.nav-item').style.color = '#000'
     }
     if (document.documentElement.scrollTop < 200) {
       document.getElementById('header').classList.remove('fixed-top')

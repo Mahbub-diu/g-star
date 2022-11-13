@@ -76,7 +76,8 @@
 .header {
   background-color: transparent;
   transition: 0.5s;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 1;
 
   &:hover {
