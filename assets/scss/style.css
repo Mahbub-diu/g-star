@@ -191,6 +191,7 @@ section {
 .header-banner-wrapper {
   position: relative;
   height: 100vh;
+  top: -4px;
 }
 
 .header {
@@ -275,6 +276,7 @@ section {
 }
 /* ============ mobile view .end// ============ */
 .banner-video {
+  width: 100%;
   position: absolute;
   top: 0;
 }

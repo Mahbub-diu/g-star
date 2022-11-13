@@ -70,6 +70,7 @@
 .header-banner-wrapper {
   position: relative;
   height: 100vh;
+  top: -4px;
 }
 
 .header {
@@ -148,7 +149,6 @@
 
 
 
-
 .navbar .megamenu {
   padding: 1rem;
 }
@@ -179,6 +179,7 @@
 
 
 .banner-video {
+  width: 100%;
   position: absolute;
   // z-index: -1;
   top: 0;
