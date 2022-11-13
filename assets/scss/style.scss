@@ -67,9 +67,15 @@
   }
 }
 
+.header-banner-wrapper {
+  
+}
+
 .header {
   background-color: transparent;
   transition: 0.5s;
+  position: sticky;
+  z-index: 1;
 
   &:hover {
     background-color: $white;
@@ -139,6 +145,7 @@
   }
 }
 
+
 .navbar .megamenu {
   padding: 1rem;
 }
@@ -167,10 +174,11 @@
 }
 /* ============ mobile view .end// ============ */
 
+
 .banner-video {
-  // position: absolute;
+  position: absolute;
   // z-index: -1;
-  // top: 0;
+  top: 0;
   video {
     width: 100% !important;
     height: 100% !important;
