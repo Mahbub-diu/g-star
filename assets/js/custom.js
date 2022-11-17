@@ -81,12 +81,13 @@ $('.explorer-slider-wrapper').slick({
 });
 
 window.addEventListener('scroll', function () {
-  if (document.documentElement.scrollTop > 200) {
+  if (document.documentElement.scrollTop > 50) {
     document.getElementById('header').classList.add('fixed-top');
     document.getElementById('header').style.backgroundColor = '#fff';
+    document.getElementById('navbar-toggler').classList.add('toggle-button');
     document.querySelectorAll('.nav-link').classList.add('color-black');
   }
-  if (document.documentElement.scrollTop < 200) {
+  if (document.documentElement.scrollTop < 50) {
     document.getElementById('header').classList.remove('fixed-top');
     document.getElementById('header').style.backgroundColor = 'transparent';
   }
@@ -101,24 +102,32 @@ $('.community-slider').slick({
     '<span class="arrow_Prev"><i class="fas fa-angle-left"></i></span> ',
   nextArrow:
     '<span class="arrow_Next"><i class="fas fa-angle-right"></i></span>',
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-
-        slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        // centerPadding: '40px',
-        slidesToShow: 1,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    },
-  ],
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
 });

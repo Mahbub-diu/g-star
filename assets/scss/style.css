@@ -254,11 +254,13 @@ h6 {
   color: #FFFFFF;
 }
 .header .navbar .navbar-nav .megamenu {
+  box-sizing: border-box;
   left: 0;
   right: 0;
   width: 100%;
   margin-top: 0px;
-  padding: 20px;
+  padding: 60px 60px 40px;
+  border: none;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;

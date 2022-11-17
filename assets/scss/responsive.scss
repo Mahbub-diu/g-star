@@ -120,12 +120,134 @@
         margin-right: 6px;
       }
     }
-
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  // -------- Virgo Home ------------
+  .top {
+    .dropdown {
+      button {
+        padding: 4px 10px !important;
+      }
+    }
+  }
+
+  .header-banner-wrapper {
+    height: 64vh;
+
+    .header {
+      .navbar {
+        padding: 20px;
+
+        .navbar-toggler {
+          border: 2px solid;
+          font-size: 16px;
+          padding: 3px 9px;
+          // .navbar-toggler-icon {
+          //   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          // }
+        }
+
+        .offcanvas {
+          width: 50%;
+
+          .navbar-nav {
+            margin: 30px !important;
+          }
+
+          ul.navbar-nav {
+            li {
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .new-search-form {
+        width: 30%;
+
+        .form-control {
+          font-size: 12px;
+          border-color: $white;
+        }
+
+        i {
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        .navbar-toggler {
+          border: 1px solid $primary-color;
+          font-size: 16px;
+          padding: 3px 9px;
+          .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+        }
+      }
+    }
+  }
+
+  .gift-card{
+    padding: 30px 0;
+
+    .gift-text{
+      .gift-title{
+        font-size: 32px !important;
+      }
+      .reedem{}
+      a{
+        margin-top: 15px !important;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .explore-slider {
+    padding: 80px 0;
+
+    .slick-arrow{
+      width: 30px !important;
+      height: 30px !important;
+      top: -40px !important;
+    }
+
+    .arrow_Prev{
+      right: 42px !important;
+    }
+  }
+
+.commuinity-main{
+  .commuinity-title{
+    font-size: 30px !important;
+  }
+}
+
+.keeptouch{
+  h2{
+    font-size: 30px;
+  }
+
+  .keeptouch-navs{
+    ul{
+      li{
+        a{
+          font-size: 14px !important;
+          i{
+            font-size: 35px !important;
+          }
+        }
+      }
+    }
+  }
+}
+  // -------- Virgo Home ------------
+
   .banner {
     height: 250px !important;
 
@@ -176,7 +298,6 @@
   }
   // Product Carousel
 
-
   .product-title-text {
     max-width: 350px;
     position: absolute;
@@ -202,7 +323,6 @@
         margin-right: 6px;
       }
     }
-
   }
 }
 
@@ -255,18 +375,17 @@
   }
   // Product Carousel
 
-
   .product-title-text {
     max-width: 350px;
     top: 5%;
     right: 5%;
-    
+
     .product-title {
       font-family: $title-font;
       font-size: 30px !important;
     }
 
-    .feature-material-text{
+    .feature-material-text {
       font-size: 13px;
     }
 
@@ -283,9 +402,92 @@
         margin-right: 6px;
       }
     }
-
   }
 
+
+    // -------- Virgo Home ------------
+    .top {
+      .dropdown {
+        button {
+          padding: 4px 10px !important;
+        }
+      }
+    }
+  
+    .header-banner-wrapper {
+      height: 86vh;
+      .header {
+        .navbar {
+          padding: 20px;
+  
+          .navbar-toggler {
+            border: 1px solid $white;
+            font-size: 16px;
+            padding: 3px 9px;
+            .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+          }
+  
+          .offcanvas {
+            width: 50%;
+  
+            .navbar-nav {
+              margin: 30px !important;
+            }
+  
+            ul.navbar-nav {
+              li {
+                a {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+  
+        .new-search-form {
+          width: 30%;
+  
+          .form-control {
+            // font-size: 12px;
+            border-color: $white;
+          }
+  
+          i {
+            // font-size: 14px;
+          }
+        }
+  
+        &:hover {
+          .navbar-toggler {
+            border: 1px solid $primary-color;
+            font-size: 16px;
+            padding: 3px 9px;
+            .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+          }
+        }
+      }
+    }
+
+    .explore-slider{
+      padding: 80px 0;
+    }
+
+    .commuinity-main{
+      .commuinity-title{
+        font-size: 35px !important;
+      }
+    }
+
+    .keeptouch {
+      .keeptouch-navs{
+        padding: 40px 10px;
+      }
+    }
+    // -------- Virgo Home ------------
 }
 
 /* Large devices (desktops, 992px and up) */

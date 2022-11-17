@@ -4,6 +4,9 @@
 @import 'partials/color';
 @import 'partials/common';
 
+
+
+// ================== VIRGO HOME =======================
 .top {
   background-color: #333;
   .nav {
@@ -100,11 +103,13 @@
       }
 
       .megamenu {
+        box-sizing: border-box;
         left: 0;
         right: 0;
         width: 100%;
         margin-top: 0px;
-        padding: 20px;
+        padding: 60px 60px 40px;
+        border: none;
         @include no-radious;
         a {
           font-size: 14px;
@@ -199,11 +204,16 @@
 .navbar .megamenu {
   padding: 1rem;
 }
+
+
+
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
     position: static !important;
   }
+
   .navbar .megamenu {
     left: 0;
     right: 0;
@@ -224,6 +234,8 @@
 }
 /* ============ mobile view .end// ============ */
 
+
+
 .banner-video {
   width: 100%;
   position: absolute;
@@ -234,6 +246,9 @@
     height: 100% !important;
   }
 }
+
+// ================== VIRGO HOME =======================
+
 
 .category {
   .category-card {
@@ -1421,12 +1436,6 @@
 
 // --------- QUICK VIEW MODAL ----------
 
-// .modal-open {
-//   .modal-backdrop {
-//     display: none !important;
-//   }
-// }
-
 .quick-view-modal {
   .modal-content {
     border-radius: 0;
@@ -1939,3 +1948,8 @@
     right: 0 !important;
   }
 }
+
+
+// ====================== VIRGO HOME PAGE ===================
+
+// ====================== VIRGO HOME PAGE ===================
