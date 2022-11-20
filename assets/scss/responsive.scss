@@ -137,7 +137,7 @@
   }
 
   .header-banner-wrapper {
-    height: 64vh;
+    // height: 350px;
 
     .header {
       .navbar {
@@ -192,6 +192,10 @@
           }
         }
       }
+    }
+
+    .banner-video{
+
     }
   }
 
@@ -430,7 +434,7 @@
     }
   
     .header-banner-wrapper {
-      height: 86vh;
+      // height: 86vh;
       .header {
         .navbar {
           padding: 20px;
@@ -486,6 +490,7 @@
         }
       }
     }
+
 
     .explore-slider{
       padding: 80px 0;

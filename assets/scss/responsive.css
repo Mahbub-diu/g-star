@@ -263,9 +263,6 @@ h6 {
   .top .dropdown button {
     padding: 4px 10px !important;
   }
-  .header-banner-wrapper {
-    height: 64vh;
-  }
   .header-banner-wrapper .header .navbar {
     padding: 20px;
   }
@@ -438,9 +435,6 @@ h6 {
   }
   .top .dropdown button {
     padding: 4px 10px !important;
-  }
-  .header-banner-wrapper {
-    height: 86vh;
   }
   .header-banner-wrapper .header .navbar {
     padding: 20px;

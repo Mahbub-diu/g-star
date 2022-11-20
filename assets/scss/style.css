@@ -229,8 +229,8 @@ h6 {
 
 .header-banner-wrapper {
   position: relative;
-  height: 100vh;
   top: -4px;
+  z-index: 99;
 }
 
 .header {
@@ -238,7 +238,7 @@ h6 {
   transition: 0.5s;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
 }
 .header .navbar .offcanvas .navbar-brand {
   max-width: 200px;
@@ -375,6 +375,9 @@ h6 {
   height: 100% !important;
 }
 
+.category {
+  margin-top: 55%;
+}
 .category .category-card {
   position: relative;
 }

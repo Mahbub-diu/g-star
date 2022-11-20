@@ -72,8 +72,10 @@
 
 .header-banner-wrapper {
   position: relative;
-  height: 100vh;
+  // height: 100vh;
+  // height: 350px;
   top: -4px;
+  z-index: 99;
 }
 
 .header {
@@ -81,7 +83,7 @@
   transition: 0.5s;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
 
   .navbar {
     .offcanvas {
@@ -251,6 +253,7 @@
 
 
 .category {
+  margin-top: 55%;
   .category-card {
     position: relative;
 
