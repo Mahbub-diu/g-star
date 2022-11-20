@@ -84,12 +84,15 @@ window.addEventListener('scroll', function () {
   if (document.documentElement.scrollTop > 50) {
     document.getElementById('header').classList.add('fixed-top');
     document.getElementById('header').style.backgroundColor = '#fff';
+    document.getElementById('header').style.boxShadow = 'rgb(0 0 0 / 75%) 0px 0px 9px -6px';
     document.getElementById('navbar-toggler').classList.add('toggle-button');
     document.querySelectorAll('.nav-link').classList.add('color-black');
   }
   if (document.documentElement.scrollTop < 50) {
     document.getElementById('header').classList.remove('fixed-top');
     document.getElementById('header').style.backgroundColor = 'transparent';
+    document.getElementById('header').style.boxShadow = 'none';
+
   }
 });
 
