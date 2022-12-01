@@ -167,6 +167,7 @@
       }
     }
   }
+  
   &:hover {
     background-color: $white !important;
     li.nav-item {
@@ -1645,11 +1646,20 @@
             border: 2px solid $primary-color;
             cursor: pointer;
             .check {
-              opacity: 1;
+              opacity: 1 !important;
             }
             img {
               transform: scale(1.1);
             }
+          }
+        }
+        li.active{
+          cursor: pointer;
+          .check {
+            opacity: 1 !important;
+          }
+          img {
+            transform: scale(1.1);
           }
         }
       }

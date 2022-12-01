@@ -1565,9 +1565,18 @@ h6 {
   cursor: pointer;
 }
 .product-carousel .carousel-product-info .color-variation ul li:hover .check {
-  opacity: 1;
+  opacity: 1 !important;
 }
 .product-carousel .carousel-product-info .color-variation ul li:hover img {
+  transform: scale(1.1);
+}
+.product-carousel .carousel-product-info .color-variation ul li.active {
+  cursor: pointer;
+}
+.product-carousel .carousel-product-info .color-variation ul li.active .check {
+  opacity: 1 !important;
+}
+.product-carousel .carousel-product-info .color-variation ul li.active img {
   transform: scale(1.1);
 }
 .product-carousel .carousel-product-info .size-guide p {
